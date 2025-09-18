@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Savory Bites for reservations, inquiries, or special events. We're here to make your dining experience exceptional">
+    <title>Contact - Savory Bites | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Savory Bites</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link active">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Get in touch for reservations, inquiries, or special events</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-content">
+                    <!-- Contact Form -->
+                    <div class="contact-form-container">
+                        <h2>Make a Reservation</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="nameError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date *</label>
+                                    <input type="date" id="date" name="date" required>
+                                    <span class="error-message" id="dateError"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="time">Preferred Time *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">Select Time</option>
+                                        <option value="17:00">5:00 PM</option>
+                                        <option value="17:30">5:30 PM</option>
+                                        <option value="18:00">6:00 PM</option>
+                                        <option value="18:30">6:30 PM</option>
+                                        <option value="19:00">7:00 PM</option>
+                                        <option value="19:30">7:30 PM</option>
+                                        <option value="20:00">8:00 PM</option>
+                                        <option value="20:30">8:30 PM</option>
+                                        <option value="21:00">9:00 PM</option>
+                                    </select>
+                                    <span class="error-message" id="timeError"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="guests">Number of Guests *</label>
+                                <select id="guests" name="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                    <option value="5">5 Guests</option>
+                                    <option value="6">6 Guests</option>
+                                    <option value="7">7 Guests</option>
+                                    <option value="8">8 Guests</option>
+                                    <option value="more">More than 8</option>
+                                </select>
+                                <span class="error-message" id="guestsError"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="occasion">Special Occasion</label>
+                                <select id="occasion" name="occasion">
+                                    <option value="">Select Occasion (Optional)</option>
+                                    <option value="birthday">Birthday</option>
+                                    <option value="anniversary">Anniversary</option>
+                                    <option value="business">Business Dinner</option>
+                                    <option value="date">Date Night</option>
+                                    <option value="celebration">Celebration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Special Requests or Dietary Restrictions</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Please let us know about any allergies, dietary restrictions, or special requests..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit Reservation</button>
+                        </form>
+                        
+                        <!-- Success Message -->
+                        <div class="success-message" id="successMessage" style="display: none;">
+                            <h3>Reservation Submitted!</h3>
+                            <p>Thank you for your reservation request. We'll contact you within 24 hours to confirm your booking.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div class="contact-info">
+                        <h2>Get In Touch</h2>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h3>Address</h3>
+                                <p>123 Gourmet Street<br>Foodie District<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+15551234567">(555) 123-4567</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:info@savorybites.com">info@savorybites.com</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">🕒</div>
+                            <div class="info-content">
+                                <h3>Hours</h3>
+                                <p>
+                                    Monday - Thursday: 5:00 PM - 10:00 PM<br>
+                                    Friday - Saturday: 5:00 PM - 11:00 PM<br>
+                                    Sunday: 4:00 PM - 9:00 PM
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Follow Us</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="Facebook">📘</a>
+                                <a href="#" aria-label="Instagram">📷</a>
+                                <a href="#" aria-label="Twitter">🐦</a>
+                                <a href="#" aria-label="Yelp">⭐</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Section -->
+        <section class="map-section">
+            <div class="container">
+                <h2>Find Us</h2>
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <div class="map-content">
+                            <h3>📍 Savory Bites Location</h3>
+                            <p>123 Gourmet Street, Foodie District</p>
+                            <p>New York, NY 10001</p>
+                            <div class="map-features">
+                                <p>🚗 Valet Parking Available</p>
+                                <p>🚇 Near Metro Station</p>
+                                <p>♿ Wheelchair Accessible</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>Do you take walk-ins?</h3>
+                        <p>While we welcome walk-ins, we highly recommend making a reservation to ensure availability, especially during peak hours and weekends.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What is your dress code?</h3>
+                        <p>We maintain a smart casual dress code. We ask that guests avoid athletic wear, flip-flops, and overly casual attire.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you accommodate dietary restrictions?</h3>
+                        <p>Absolutely! We can accommodate most dietary restrictions including vegetarian, vegan, gluten-free, and various allergies. Please inform us when making your reservation.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Is parking available?</h3>
+                        <p>Yes, we offer complimentary valet parking for our guests. Street parking is also available in the surrounding area.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>Do you host private events?</h3>
+                        <p>Yes, we have private dining options for special events, corporate dinners, and celebrations. Please contact us directly to discuss your needs.</p>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <h3>What is your cancellation policy?</h3>
+                        <p>We ask for at least 24 hours notice for cancellations. For parties of 6 or more, we require 48 hours notice.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory Bites</h3>
+                    <p>Experience culinary excellence in every bite. Join us for an unforgettable dining experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Gourmet Street, Foodie District</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@savorybites.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                    <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                    <p>Sunday: 4:00 PM - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

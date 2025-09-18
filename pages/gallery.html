@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Browse our gallery showcasing the ambiance, dishes, and memorable moments at Savory Bites">
+    <title>Gallery - Savory Bites | Fine Dining Restaurant</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Savory Bites</h1>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="../index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="menu.html" class="nav-link">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link active">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                
+                <!-- Mobile Hamburger Menu -->
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Gallery</h1>
+                <p>A visual journey through our culinary artistry and dining experience</p>
+            </div>
+        </section>
+
+        <!-- Gallery Filter -->
+        <section class="gallery-filters">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="dishes">Dishes</button>
+                    <button class="filter-btn" data-filter="interior">Interior</button>
+                    <button class="filter-btn" data-filter="events">Events</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-section">
+            <div class="container">
+                <div class="gallery-grid">
+                    <!-- Dishes -->
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/gallery/dish1.jpeg" alt="Grilled Salmon with herbs" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Grilled Atlantic Salmon</h3>
+                            <p>Fresh herbs and seasonal vegetables</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/gallery/dish2.jpeg" alt="Beef Tenderloin" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Prime Beef Tenderloin</h3>
+                            <p>Perfectly aged with truffle mashed potatoes</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/gallery/dish3.jpeg" alt="Mushroom Risotto" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Wild Mushroom Risotto</h3>
+                            <p>Creamy arborio rice with seasonal mushrooms</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/gallery/dish4.jpeg" alt="Chocolate Lava Cake" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Chocolate Lava Cake</h3>
+                            <p>Warm chocolate with molten center</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/dish3.jpeg" alt="Lobster Ravioli" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Lobster Ravioli</h3>
+                            <p>House-made pasta with fresh lobster</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/dish4.jpeg" alt="Seared Scallops" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Seared Scallops</h3>
+                            <p>Pan-seared with cauliflower purée</p>
+                        </div>
+                    </div>
+
+                    <!-- Interior -->
+                    <div class="gallery-item" data-category="interior">
+                        <img src="../images/gallery/interior.jpeg" alt="Main dining room" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Main Dining Room</h3>
+                            <p>Elegant atmosphere for fine dining</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="interior">
+                        <img src="../images/gallery/interior.jpeg" alt="Private dining area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Private Dining Area</h3>
+                            <p>Intimate setting for special occasions</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="interior">
+                        <img src="../images/gallery/interior.jpeg" alt="Bar area" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Bar & Lounge</h3>
+                            <p>Craft cocktails and wine selection</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="interior">
+                        <img src="../images/gallery/interior.jpeg" alt="Kitchen view" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Open Kitchen</h3>
+                            <p>Watch our chefs create culinary magic</p>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/meetevent.jpeg" alt="Wedding celebration" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Wedding Celebration</h3>
+                            <p>Making your special day unforgettable</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/restaurant-event.jpeg" alt="Corporate dinner" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Corporate Events</h3>
+                            <p>Professional dining experiences</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/meetevent.jpeg" alt="Wine tasting" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Wine Tasting Evening</h3>
+                            <p>Curated wine and food pairings</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/restaurant-event.jpeg" alt="Chef's table" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Chef's Table Experience</h3>
+                            <p>Exclusive culinary journey</p>
+                        </div>
+                    </div>
+
+                    <!-- Additional items using top-level images/ folder -->
+                    <!-- Dishes -->
+                    <div class="gallery-item" data-category="dishes">
+                        <img src="../images/dish4.jpeg" alt="Signature pasta dish" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Chef's Signature Pasta</h3>
+                            <p>House-made pasta with seasonal ingredients</p>
+                        </div>
+                    </div>
+
+                    <!-- Interior -->
+                    <div class="gallery-item" data-category="interior">
+                        <img src="../images/interior.jpeg" alt="Restaurant interior" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Interior</h3>
+                            <p>Warm ambiance and elegant design</p>
+                        </div>
+                    </div>
+
+                    <!-- Events -->
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/meetevent.jpeg" alt="Private dining event" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Private Dining Event</h3>
+                            <p>Intimate gatherings and celebrations</p>
+                        </div>
+                    </div>
+
+                    <div class="gallery-item" data-category="events">
+                        <img src="../images/restaurant-event.jpeg" alt="Restaurant event" loading="lazy">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Event</h3>
+                            <p>Memorable moments at Savory Bites</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox">
+            <div class="lightbox-content">
+                <span class="lightbox-close">&times;</span>
+                <img class="lightbox-image" src="" alt="">
+                <div class="lightbox-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+                <button class="lightbox-prev">&#10094;</button>
+                <button class="lightbox-next">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="gallery-cta">
+            <div class="container">
+                <h2>Experience It Yourself</h2>
+                <p>Join us for an unforgettable dining experience where every dish is a work of art.</p>
+                <a href="contact.html" class="btn btn-primary">Make Reservation</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Savory Bites</h3>
+                    <p>Experience culinary excellence in every bite. Join us for an unforgettable dining experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>📍 123 Gourmet Street, Foodie District</p>
+                    <p>📞 (555) 123-4567</p>
+                    <p>✉️ info@savorybites.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Hours</h4>
+                    <p>Monday - Thursday: 5:00 PM - 10:00 PM</p>
+                    <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                    <p>Sunday: 4:00 PM - 9:00 PM</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Savory Bites. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
