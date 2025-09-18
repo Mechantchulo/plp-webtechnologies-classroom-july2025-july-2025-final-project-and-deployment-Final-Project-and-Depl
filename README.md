@@ -3,7 +3,7 @@
 
 Savory Bites is a responsive, multi‑page restaurant website showcasing a refined dining experience, curated menu highlights, a rich photo gallery, and clear contact and reservation pathways. The project is built with semantic HTML5, modern CSS, and vanilla JavaScript for interactivity and accessibility.
 
-Live URL: add-once-deployed
+Live URL: (https://plp-webtechnologies-classroom-july2-kappa.vercel.app/)
 
 ## Features
 
